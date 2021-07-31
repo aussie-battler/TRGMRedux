@@ -1,0 +1,15 @@
+{
+  "name": "upload-to-workshop",
+  "version": "1.0.0",
+  "description": "A utility to create or upload Arma 3 missions to the workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TheAce0296",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
+  }
+}
