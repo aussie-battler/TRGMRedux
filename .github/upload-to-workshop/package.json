@@ -9,9 +9,9 @@
   "author": "TheAce0296",
   "license": "MIT",
   "dependencies": {
+    "@actions/core": "^1.2.1",
     "axios": "^0.21.1",
     "dotenv": "^10.0.0",
-    "fs-extra": "^10.0.0",
-    "steamcmd-interface": "^3.0.0"
+    "fs-extra": "^10.0.0"
   }
 }
