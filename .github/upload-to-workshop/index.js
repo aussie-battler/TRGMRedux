@@ -1,5 +1,5 @@
 require('dotenv').config();
-const fs = require('fs');
+const fsx = require('fs-extra');
 const path = require('path');
 const axios = require('axios').default;
 
