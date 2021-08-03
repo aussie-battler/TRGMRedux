@@ -11,6 +11,7 @@ const ARMA_APP_ID = 107410;
 const RANKED_BY_TEXT_SEARCH = 12;
 const THEACE0296_CREATOR_ID = '76561198044344337';
 
+
 const ARMA_FILE_TO_NAME_MAP = {
   altis: 'Altis',
   cam_lao_nam: 'Cam Lao Nam',
@@ -66,6 +67,14 @@ const ARMA_FILE_TO_NAME_MAP = {
   winthera3: 'winthera3',
   xcam_taunus: 'xcam_taunus',
 };
+
+startGroup('Initializing greenworks...');
+if (greenworks.init()) {
+
+} else {
+    setFailed('Greenworks failed to initialize!');
+}
+endGroup();
 
 const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
   return axios.get(QUERY_FILES_ENDPOINT, {
