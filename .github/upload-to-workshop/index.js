@@ -11,7 +11,6 @@ const ARMA_APP_ID = 107410;
 const RANKED_BY_TEXT_SEARCH = 12;
 const THEACE0296_CREATOR_ID = '76561198044344337';
 
-
 const ARMA_FILE_TO_NAME_MAP = {
   altis: 'Altis',
   cam_lao_nam: 'Cam Lao Nam',
@@ -67,14 +66,6 @@ const ARMA_FILE_TO_NAME_MAP = {
   winthera3: 'winthera3',
   xcam_taunus: 'xcam_taunus',
 };
-
-startGroup('Initializing greenworks...');
-if (greenworks.init()) {
-
-} else {
-    setFailed('Greenworks failed to initialize!');
-}
-endGroup();
 
 const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
   return axios.get(QUERY_FILES_ENDPOINT, {
@@ -153,9 +144,76 @@ const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
         }
       }
     }
+    endGroup();
 
-    console.debug(JSON.stringify(existingFiles, null, 2));
-
+    startGroup('Initializing greenworks...');
+    if (greenworks.init()) {
+      greenworks.ugcGetUserItems(
+        {
+          app_id: ARMA_APP_ID,
+          page_num: 1,
+        },
+        greenworks.UGCMatchingType.Items,
+        greenworks.UserUGCListSortOrder.TitleAsc,
+        greenworks.UserUGCList.Published,
+        items => {
+          const files = fsx
+            .readdirSync(path.resolve('A:/TRGMRedux Nightly'))
+            .filter(
+              file =>
+                ARMA_FILE_TO_NAME_MAP[/\.(.+?)\.pbo/.exec(file)[1].toLowerCase()] !==
+                /\.(.+?)\.pbo/.exec(file)[1].toLowerCase()
+            )
+            .map(file => ({
+              title: `[Nightly] ${path.basename(file).substr(0, path.basename(file).indexOf('.'))} (${
+                ARMA_FILE_TO_NAME_MAP[/\.(.+?)\.pbo/.exec(file)[1].toLowerCase()]
+              })`,
+              file,
+            }));
+          const updatePromises = existingFiles.map(exisitingFile => {
+            const { name, asset, appId, itemId, contentPath, changelog } = exisitingFile;
+            const matchingItem = items.find(item => item.publishedFileId === itemId || item.title === name);
+            const matchingFile = files.find(file => file.title.toLowerCase() === matchingItem.title.toLowerCase());
+            if (matchingFile && matchingItem) {
+              startGroup(`Matching file found for: ${matchingItem.title} -> ${matchingFile.file}, updating!`);
+              endGroup();
+              return new Promise(res => {
+                greenworks.updatePublishedWorkshopFile(
+                  { tags: matchingItem.tags.split(',') },
+                  matchingItem.file,
+                  '', // path.normalize(path.resolve('A:/TRGMRedux Nightly', matchingFile.file)),
+                  '',
+                  '',
+                  '',
+                  () => {
+                    startGroup(`${matchingItem.title} updated!`);
+                    endGroup();
+                    res(true);
+                  },
+                  (err) => {
+                    startGroup(`Failed to update ${matchingItem.title}!`);
+                    console.error(err);
+                    endGroup();
+                    res(false);
+                  }
+                );
+              });
+            } else {
+              startGroup(`No matching file found for: ${matchingItem.title}!`);
+              endGroup();
+              return new Promise(res => setTimeout(res), 100);
+            }
+          });
+          Promise.all(updatePromises)
+            .then(() => process.exit(0))
+            .catch(() => process.exit(1));
+          1;
+        },
+        () => process.exit(1)
+      );
+    } else {
+      setFailed('Greenworks failed to initialize!');
+    }
     endGroup();
   } catch (error) {
     console.error('An error occured while updating release assets:');

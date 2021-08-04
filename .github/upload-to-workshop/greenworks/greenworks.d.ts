@@ -1,6 +1,5 @@
 export = greenworks;
 declare var greenworks: Greenworks;
-type ErrorCallback = (err: any) => void;
 interface Greenworks {
   /**
    * Returns a True when Steam APIs were successfully initialized, otherwise throw an error.
@@ -52,7 +51,7 @@ interface Greenworks {
    * Returns a String representing the absolute path to the app's installation directory.
    */
   getAppInstallDir: (app_id: number) => string;
-  getNumberOfPlayers: (success_callback: (num_of_players: number) => void, error_callback: ErrorCallback) => void;
+  getNumberOfPlayers: (success_callback: (num_of_players: number) => void, error_callback: (err: any) => void) => void;
   /**
    * Activate the game overlay with the option dialog opens.
    */
@@ -103,28 +102,28 @@ interface Greenworks {
   fileShare: (
     file_path: string,
     success_callback: (file_handle: string) => void,
-    error_callback?: ErrorCallback
+    error_callback?: (err: any) => void
   ) => void;
   ugcGetItems: (
     options: { app_id: number; page_num: number },
     ugc_matching_type: UGCMatchingType,
     ugc_query_type: UGCQueryType,
-    success_callback: (items: SteamUGCDetails) => void,
-    error_callback?: ErrorCallback
+    success_callback: (items: SteamUGCDetails[]) => void,
+    error_callback?: (err: any) => void
   ) => void;
   ugcGetUserItems: (
     options: { app_id: number; page_num: number },
     ugc_matching_type: UGCMatchingType,
     ugc_list_sort_order: UserUGCListSortOrder,
     ugc_list: UserUGCList,
-    success_callback: (items: SteamUGCDetails) => void,
-    error_callback?: ErrorCallback
+    success_callback: (items: SteamUGCDetails[]) => void,
+    error_callback?: (err: any) => void
   ) => void;
   ugcDownloadItem: (
     download_file_handle: string,
     download_dir: string,
     success_callback: () => void,
-    error_callback?: ErrorCallback
+    error_callback?: (err: any) => void
   ) => void;
   /**
    * Downloads/Synchronizes user's workitems (UserUGCList.Subscribed, UserMatchingType.Items) to the local sync_dir
@@ -134,10 +133,10 @@ interface Greenworks {
   ugcSynchronizeItems: (
     options: { app_id: number; page_num: number },
     sync_dir: string,
-    success_callback: (items: { SteamUGCDetails: SteamUGCDetails; isUpdated: boolean }[]) => void,
-    error_callback?: ErrorCallback
+    success_callback: (items: { SteamUGCDetails: SteamUGCDetails[]; isUpdated: boolean }[]) => void,
+    error_callback?: (err: any) => void
   ) => void;
-  ugcUnsubscribe: (published_file_handle: string, success_callback: () => void, error_callback?: ErrorCallback) => void;
+  ugcUnsubscribe: (published_file_handle: string, success_callback: () => void, error_callback?: (err: any) => void) => void;
   /**
    * Shows the Steam overlay pointed to Steam's workshop page or to the specified workshop item.
    */
@@ -159,7 +158,7 @@ interface Greenworks {
   /**
    * Writes mutilple local files to Steam Cloud.
    */
-  saveFilesToCloud: (files_path: string[], success_callback: () => void, error_callback?: ErrorCallback) => void;
+  saveFilesToCloud: (files_path: string[], success_callback: () => void, error_callback?: (err: any) => void) => void;
   /**
    * Publishes file_path workshop item on Steam.
    *
@@ -176,7 +175,7 @@ interface Greenworks {
     title: string,
     description: string,
     success_callback: (publish_file_handle: string) => void,
-    error_callback?: ErrorCallback
+    error_callback?: (err: any) => void
   ) => void;
   /**
    * An empty string of file_path/image_path/title/description means no update of that field.
@@ -189,7 +188,7 @@ interface Greenworks {
     title: string,
     description: string,
     success_callback: () => void,
-    error_callback?: ErrorCallback
+    error_callback?: (err: any) => void
   ) => void;
   /**
    * Publishes user generated content(ugc) to Steam workshop.
@@ -200,7 +199,7 @@ interface Greenworks {
     description: string,
     image_name: string,
     success_callback: (published_file_handle: string) => void,
-    error_callback?: ErrorCallback,
+    error_callback?: (err: any) => void,
     progress_callback?: (progress_msg: string) => void
   ) => void;
   /**
@@ -213,7 +212,7 @@ interface Greenworks {
     description: string,
     image_name: string,
     success_callback: (published_file_handle: string) => void,
-    error_callback?: ErrorCallback,
+    error_callback?: (err: any) => void,
     progress_callback?: (progress_msg: string) => void
   ) => void;
   Utils: {
@@ -224,7 +223,7 @@ interface Greenworks {
       source_dir: string,
       target_dir: string,
       success_callback: () => void,
-      error_callback?: ErrorCallback
+      error_callback?: (err: any) => void
     ) => void;
     /**
      * Creates a zip archive of source_dir.
@@ -235,7 +234,7 @@ interface Greenworks {
       password: string,
       compress_level: number,
       success_callback: () => void,
-      error_callback?: ErrorCallback
+      error_callback?: (err: any) => void
     ) => void;
     /**
      * Extracts the zip_file_path to the specified extract_dir.
@@ -245,7 +244,7 @@ interface Greenworks {
       extract_dir: string,
       password: string,
       success_callback: () => void,
-      error_callback?: ErrorCallback
+      error_callback?: (err: any) => void
     ) => void;
   };
   /**
@@ -263,7 +262,7 @@ interface Greenworks {
   /**
    * Stores the current user stats data on the server.
    */
-  storeStats: (success_callback: (game_id: number) => void, error_callback?: ErrorCallback) => void;
+  storeStats: (success_callback: (game_id: number) => void, error_callback?: (err: any) => void) => void;
   _steam_events: Steamevents;
   EncryptedAppTicketSymmetricKeyLength: number;
   FriendFlags: FriendFlags;
