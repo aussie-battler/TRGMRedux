@@ -168,7 +168,7 @@ const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
               title: `[Nightly] ${path.basename(file).substr(0, path.basename(file).indexOf('.'))} (${
                 ARMA_FILE_TO_NAME_MAP[/\.(.+?)\.pbo/.exec(file)[1].toLowerCase()]
               })`,
-              file,
+              file: path.resolve('A:/TRGMRedux Nightly', file).replace(/\\|\//g, '/'),
             }));
           const updatePromises = existingFiles.map(exisitingFile => {
             const { name, asset, appId, itemId, contentPath, changelog } = exisitingFile;
@@ -178,20 +178,42 @@ const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
               startGroup(`Matching file found for: ${matchingItem.title} -> ${matchingFile.file}, updating!`);
               endGroup();
               return new Promise(res => {
-                greenworks.updatePublishedWorkshopFile(
-                  { tags: matchingItem.tags.split(',') },
-                  matchingItem.file,
-                  '', // path.normalize(path.resolve('A:/TRGMRedux Nightly', matchingFile.file)),
-                  '',
-                  '',
-                  '',
+                greenworks.saveFilesToCloud(
+                  [matchingFile.file],
                   () => {
-                    startGroup(`${matchingItem.title} updated!`);
-                    endGroup();
-                    res(true);
+                    greenworks.fileShare(
+                      matchingFile.file,
+                      file_handle => {
+                        greenworks.updatePublishedWorkshopFile(
+                          { tags: matchingItem.tags.split(',') },
+                          matchingItem.publishedFileId,
+                          file_handle,
+                          '',
+                          '',
+                          '',
+                          () => {
+                            startGroup(`${matchingItem.title} updated!`);
+                            endGroup();
+                            res(true);
+                          },
+                          err => {
+                            startGroup(`Failed to update ${matchingItem.title}!`);
+                            console.error(err);
+                            endGroup();
+                            res(false);
+                          }
+                        );
+                      },
+                      err => {
+                        startGroup(`Failed to share ${matchingFile.file}!`);
+                        console.error(err);
+                        endGroup();
+                        res(false);
+                      }
+                    );
                   },
-                  (err) => {
-                    startGroup(`Failed to update ${matchingItem.title}!`);
+                  err => {
+                    startGroup(`Failed to upload ${matchingFile.file}!`);
                     console.error(err);
                     endGroup();
                     res(false);
@@ -204,7 +226,7 @@ const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
               return new Promise(res => setTimeout(res), 100);
             }
           });
-          Promise.all(updatePromises)
+          Promise.all([updatePromises[0]])
             .then(() => process.exit(0))
             .catch(() => process.exit(1));
           1;
