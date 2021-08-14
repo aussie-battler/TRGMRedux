@@ -4,7 +4,7 @@ const fsx = require('fs-extra');
 const path = require('path');
 const axios = require('axios').default;
 
-const greenworks = require('./greenworks/greenworks.js');
+const steamworks = require('./steamworks-node');
 const QUERY_FILES_ENDPOINT = 'https://api.steampowered.com/IPublishedFileService/QueryFiles/v1/';
 
 const ARMA_APP_ID = 107410;
@@ -131,6 +131,7 @@ const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
                     itemId: publishedFileDetail.publishedfileid,
                     contentPath: path.normalize(path.resolve(releaseAssetsPath, asset)),
                     changelog,
+                    ...publishedFileDetail,
                   },
                 ];
               }
@@ -146,97 +147,132 @@ const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
     }
     endGroup();
 
-    startGroup('Initializing greenworks...');
-    if (greenworks.init()) {
-      greenworks.ugcGetUserItems(
-        {
-          app_id: ARMA_APP_ID,
-          page_num: 1,
-        },
-        greenworks.UGCMatchingType.Items,
-        greenworks.UserUGCListSortOrder.TitleAsc,
-        greenworks.UserUGCList.Published,
-        items => {
-          const files = fsx
-            .readdirSync(path.resolve('A:/TRGMRedux Nightly'))
-            .filter(
-              file =>
-                ARMA_FILE_TO_NAME_MAP[/\.(.+?)\.pbo/.exec(file)[1].toLowerCase()] !==
-                /\.(.+?)\.pbo/.exec(file)[1].toLowerCase()
-            )
-            .map(file => ({
-              title: `[Nightly] ${path.basename(file).substr(0, path.basename(file).indexOf('.'))} (${
-                ARMA_FILE_TO_NAME_MAP[/\.(.+?)\.pbo/.exec(file)[1].toLowerCase()]
-              })`,
-              file: path.resolve('A:/TRGMRedux Nightly', file).replace(/\\|\//g, '/'),
-            }));
-          const updatePromises = existingFiles.map(exisitingFile => {
-            const { name, asset, appId, itemId, contentPath, changelog } = exisitingFile;
-            const matchingItem = items.find(item => item.publishedFileId === itemId || item.title === name);
-            const matchingFile = files.find(file => file.title.toLowerCase() === matchingItem.title.toLowerCase());
-            if (matchingFile && matchingItem) {
-              startGroup(`Matching file found for: ${matchingItem.title} -> ${matchingFile.file}, updating!`);
-              endGroup();
-              return new Promise(res => {
-                greenworks.saveFilesToCloud(
-                  [matchingFile.file],
-                  () => {
-                    greenworks.fileShare(
-                      matchingFile.file,
-                      file_handle => {
-                        greenworks.updatePublishedWorkshopFile(
-                          { tags: matchingItem.tags.split(',') },
-                          matchingItem.publishedFileId,
-                          file_handle,
-                          '',
-                          '',
-                          '',
-                          () => {
-                            startGroup(`${matchingItem.title} updated!`);
-                            endGroup();
-                            res(true);
-                          },
-                          err => {
-                            startGroup(`Failed to update ${matchingItem.title}!`);
-                            console.error(err);
-                            endGroup();
-                            res(false);
-                          }
-                        );
-                      },
-                      err => {
-                        startGroup(`Failed to share ${matchingFile.file}!`);
-                        console.error(err);
-                        endGroup();
-                        res(false);
-                      }
-                    );
-                  },
-                  err => {
-                    startGroup(`Failed to upload ${matchingFile.file}!`);
-                    console.error(err);
-                    endGroup();
-                    res(false);
-                  }
-                );
-              });
-            } else {
-              startGroup(`No matching file found for: ${matchingItem.title}!`);
-              endGroup();
-              return new Promise(res => setTimeout(res), 100);
-            }
-          });
-          Promise.all([updatePromises[0]])
-            .then(() => process.exit(0))
-            .catch(() => process.exit(1));
-          1;
-        },
-        () => process.exit(1)
-      );
-    } else {
-      setFailed('Greenworks failed to initialize!');
-    }
-    endGroup();
+    console.log(JSON.stringify(existingFiles, null, 2));
+
+    // startGroup('Initializing greenworks...');
+    // if (greenworks.init()) {
+    //   greenworks.ugcGetUserItems(
+    //     {
+    //       app_id: ARMA_APP_ID,
+    //       page_num: 1,
+    //     },
+    //     greenworks.UGCMatchingType.Items,
+    //     greenworks.UserUGCListSortOrder.TitleAsc,
+    //     greenworks.UserUGCList.Published,
+    //     items => {
+    //       const files = fsx
+    //         .readdirSync(path.resolve('A:/TRGMRedux Nightly'))
+    //         .filter(
+    //           file =>
+    //             ARMA_FILE_TO_NAME_MAP[/\.(.+?)\.pbo/.exec(file)[1].toLowerCase()] !==
+    //             /\.(.+?)\.pbo/.exec(file)[1].toLowerCase()
+    //         )
+    //         .map(file => ({
+    //           title: `[Nightly] ${path.basename(file).substr(0, path.basename(file).indexOf('.'))} (${
+    //             ARMA_FILE_TO_NAME_MAP[/\.(.+?)\.pbo/.exec(file)[1].toLowerCase()]
+    //           })`,
+    //           file: path.resolve('A:/TRGMRedux Nightly', file).replace(/\\|\//g, '/'),
+    //         }));
+    //       const updateFiles = [];
+    //       const updatePromises = existingFiles.map(exisitingFile => {
+    //         const { name, asset, appId, itemId, contentPath, changelog } = exisitingFile;
+    //         const matchingItem = items.find(item => item.publishedFileId === itemId || item.title === name);
+    //         const matchingFile = files.find(file => file.title.toLowerCase() === matchingItem.title.toLowerCase());
+    //         const tags = Array.from(new Set([
+    //           ...'Singleplayer,Infantry,Coop,Vehicles,Scenario,Dependency,Air,Water,Multiplayer,Tag Review'.split(',').filter(tag => !!tag),
+    //           ...matchingItem.tags.split(',').filter(tag => !!tag),
+    //         ]));
+    //         if (matchingFile && matchingItem) {
+    //           startGroup(`Matching file found for: ${matchingItem.title} -> ${matchingFile.file} | ItemId: ${matchingItem.publishedFileId}, updating!`);
+    //           endGroup();
+    //           updateFiles.push({
+    //             itemId: matchingItem.publishedFileId,
+    //             file  : matchingFile.file,
+    //           });
+    //           // return new Promise(res => {
+    //           //   greenworks.updatePublishedWorkshopFile(
+    //           //     { tags: tags },
+    //           //     matchingItem.publishedFileId,
+    //           //     '',
+    //           //     '',
+    //           //     '',
+    //           //     '',
+    //           //     () => {
+    //           //       startGroup(`${matchingItem.title} updated!`);
+    //           //       endGroup();
+    //           //       res(true);
+    //           //     },
+    //           //     err => {
+    //           //       startGroup(`Failed to update ${matchingItem.title}!`);
+    //           //       console.error(err);
+    //           //       endGroup();
+    //           //       res(false);
+    //           //     }
+    //           //   );
+    //           // });
+    //           // return new Promise(res => {
+    //           //   greenworks.saveFilesToCloud(
+    //           //     [matchingFile.file],
+    //           //     () => {
+    //           //       greenworks.fileShare(
+    //           //         matchingFile.file,
+    //           //         file_handle => {
+    //           //           greenworks.updatePublishedWorkshopFile(
+    //           //             { tags: tags },
+    //           //             matchingItem.publishedFileId,
+    //           //             file_handle,
+    //           //             '',
+    //           //             '',
+    //           //             '',
+    //           //             () => {
+    //           //               startGroup(`${matchingItem.title} updated!`);
+    //           //               endGroup();
+    //           //               res(true);
+    //           //             },
+    //           //             err => {
+    //           //               startGroup(`Failed to update ${matchingItem.title}!`);
+    //           //               console.error(err);
+    //           //               endGroup();
+    //           //               res(false);
+    //           //             }
+    //           //           );
+    //           //         },
+    //           //         err => {
+    //           //           startGroup(`Failed to share ${matchingFile.file}!`);
+    //           //           console.error(err);
+    //           //           endGroup();
+    //           //           res(false);
+    //           //         }
+    //           //       );
+    //           //     },
+    //           //     err => {
+    //           //       startGroup(`Failed to upload ${matchingFile.file}!`);
+    //           //       console.error(err);
+    //           //       endGroup();
+    //           //       res(false);
+    //           //     }
+    //           //   );
+    //           // });
+    //         } else {
+    //           startGroup(`No matching file found for: ${matchingItem.title}!`);
+    //           endGroup();
+    //           return new Promise(res => setTimeout(res), 100);
+    //         }
+    //       });
+    //       Promise.all(updatePromises)
+    //         .then(() => {
+    //           console.log(JSON.stringify(updateFiles, null, 2));
+    //           process.exit(0);
+    //         })
+    //         .catch(() => process.exit(1));
+    //       1;
+    //     },
+    //     () => process.exit(1)
+    //   );
+    // } else {
+    //   setFailed('Greenworks failed to initialize!');
+    // }
+    // endGroup();
   } catch (error) {
     console.error('An error occured while updating release assets:');
     console.error(error.name);
