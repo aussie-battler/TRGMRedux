@@ -1,0 +1,1495 @@
+::group::Getting list of files to upload...
+::endgroup::
+::group::Getting list of existing workshop items...
+::endgroup::
+[
+  {
+    "name": "[Nightly] TRGM-Redux (Altis)",
+    "asset": "TRGM-Redux.Altis",
+    "appId": 107410,
+    "itemId": "2562386889",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-Redux.Altis",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562386889",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070929196181_TRGM-Redux.Altis.pbo",
+    "file_size": "14690858",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756267767/EDE9D3D75262FA6A90CAB61FFFB731E5CD8C8649/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088375111/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756267767",
+    "hcontent_preview": "1696153791088375111",
+    "title": "[Nightly] TRGM-Redux (Altis)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627755749,
+    "time_updated": 1628342965,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 59,
+    "favorited": 3,
+    "followers": 0,
+    "lifetime_subscriptions": 72,
+    "lifetime_favorited": 3,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 93,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-Redux (Cam Lao Nam)",
+    "asset": "TRGM-Redux.Cam_Lao_Nam",
+    "appId": 107410,
+    "itemId": "2562390167",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-Redux.Cam_Lao_Nam",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562390167",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070929266821_TRGM-Redux.Cam_Lao_Nam.pbo",
+    "file_size": "14714798",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756268181/9C8A0CE35A38DE92FA7D0506F85E3EA9AB9DAE8F/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088377923/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756268181",
+    "hcontent_preview": "1696153791088377923",
+    "title": "[Nightly] TRGM-Redux (Cam Lao Nam)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627755970,
+    "time_updated": 1628342971,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 57,
+    "favorited": 1,
+    "followers": 0,
+    "lifetime_subscriptions": 71,
+    "lifetime_favorited": 1,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 116,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      },
+      {
+        "tag": "S.O.G. Prairie Fire",
+        "display_name": "S.O.G. Prairie Fire"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-Redux (Chernarus 2020)",
+    "asset": "TRGM-Redux.cup_chernarus_A3",
+    "appId": 107410,
+    "itemId": "2575218862",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-Redux.cup_chernarus_A3",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2575218862",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "theace0296_202108142019011544_TRGM-Redux.cup_chernarus_A3.pbo",
+    "file_size": "14693306",
+    "preview_file_size": "14693306",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1699532822664693307/43568E78EDBA4148F097AFA40450858C4C77DD14/",
+    "preview_url": "https://steamusercontent-a.akamaihd.net/ugc/1699532822664693307/43568E78EDBA4148F097AFA40450858C4C77DD14/",
+    "url": "",
+    "hcontent_file": "1699532822664693307",
+    "hcontent_preview": "1699532822664693307",
+    "title": "[Nightly] TRGM-Redux (Chernarus 2020)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1628986753,
+    "time_updated": 1628986753,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 0,
+    "favorited": 0,
+    "followers": 0,
+    "lifetime_subscriptions": 0,
+    "lifetime_favorited": 0,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 1,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "1",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-Redux (Livonia)",
+    "asset": "TRGM-Redux.lythium",
+    "appId": 107410,
+    "itemId": "2562393342",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-Redux.lythium",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562393342",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070929326162_TRGM-Redux.lythium.pbo",
+    "file_size": "14667419",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756268562/5ADB8A1E3154160865D6FC9F4D55850CE55186A6/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088371046/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756268562",
+    "hcontent_preview": "1696153791088371046",
+    "title": "[Nightly] TRGM-Redux (Livonia)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627756176,
+    "time_updated": 1628342977,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 38,
+    "favorited": 2,
+    "followers": 0,
+    "lifetime_subscriptions": 47,
+    "lifetime_favorited": 2,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 49,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-Redux (Malden)",
+    "asset": "TRGM-Redux.Malden",
+    "appId": 107410,
+    "itemId": "2561894261",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-Redux.Malden",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2561894261",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070929385730_TRGM-Redux.Malden.pbo",
+    "file_size": "14691586",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756268931/EB27F6F5D4198FAAFAAD11860C48470738604072/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088380379/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756268931",
+    "hcontent_preview": "1696153791088380379",
+    "title": "[Nightly] TRGM-Redux (Malden)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627713683,
+    "time_updated": 1628342983,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 1,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 46,
+    "favorited": 3,
+    "followers": 0,
+    "lifetime_subscriptions": 56,
+    "lifetime_favorited": 4,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 116,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "14",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-Redux (Stratis)",
+    "asset": "TRGM-Redux.Stratis",
+    "appId": 107410,
+    "itemId": "2562395729",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-Redux.Stratis",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562395729",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070929446293_TRGM-Redux.Stratis.pbo",
+    "file_size": "14653847",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756269415/8C1ED3DBC2A796CE747ECED31A1EFF7CECEC0D97/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088383605/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756269415",
+    "hcontent_preview": "1696153791088383605",
+    "title": "[Nightly] TRGM-Redux (Stratis)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627756349,
+    "time_updated": 1628342989,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 52,
+    "favorited": 1,
+    "followers": 0,
+    "lifetime_subscriptions": 62,
+    "lifetime_favorited": 1,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 53,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-Redux (Tanoa)",
+    "asset": "TRGM-Redux.Tanoa",
+    "appId": 107410,
+    "itemId": "2562396719",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-Redux.Tanoa",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562396719",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070929506622_TRGM-Redux.Tanoa.pbo",
+    "file_size": "14651566",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756269786/096F3032A65020C64F1FC61741AF66FD5E2DDA40/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088388436/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756269786",
+    "hcontent_preview": "1696153791088388436",
+    "title": "[Nightly] TRGM-Redux (Tanoa)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627756425,
+    "time_updated": 1628342995,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 46,
+    "favorited": 2,
+    "followers": 0,
+    "lifetime_subscriptions": 58,
+    "lifetime_favorited": 2,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 68,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-ReduxEmpty (Altis)",
+    "asset": "TRGM-ReduxEmpty.Altis",
+    "appId": 107410,
+    "itemId": "2562399129",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-ReduxEmpty.Altis",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562399129",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070929568463_TRGM-ReduxEMPTY.Altis.pbo",
+    "file_size": "14624501",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756270143/1FAEA492514F0BD2634DCD45BBCAE3DCBD1FC90D/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088399323/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756270143",
+    "hcontent_preview": "1696153791088399323",
+    "title": "[Nightly] TRGM-ReduxEmpty (Altis)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \"Empty\" versions of TRGM-Redux signify that the HQ is not pre-built, and the host/admin/player will be prompted to select a location for an HQ to be created upon mission start.\r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627756602,
+    "time_updated": 1628343002,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 53,
+    "favorited": 2,
+    "followers": 0,
+    "lifetime_subscriptions": 63,
+    "lifetime_favorited": 2,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 70,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "12",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-ReduxEmpty (Cam Lao Nam)",
+    "asset": "TRGM-ReduxEmpty.Cam_Lao_Nam",
+    "appId": 107410,
+    "itemId": "2562400305",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-ReduxEmpty.Cam_Lao_Nam",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562400305",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070930029075_TRGM-ReduxEMPTY.Cam_Lao_Nam.pbo",
+    "file_size": "14624267",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756271045/7866D085F60C12A2C6CED034835C511B3EB32B7B/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088404246/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756271045",
+    "hcontent_preview": "1696153791088404246",
+    "title": "[Nightly] TRGM-ReduxEmpty (Cam Lao Nam)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \"Empty\" versions of TRGM-Redux signify that the HQ is not pre-built, and the host/admin/player will be prompted to select a location for an HQ to be created upon mission start.\r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627756682,
+    "time_updated": 1628343016,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 46,
+    "favorited": 4,
+    "followers": 0,
+    "lifetime_subscriptions": 55,
+    "lifetime_favorited": 4,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 71,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-ReduxEmpty (Weferlingen)",
+    "asset": "TRGM-ReduxEmpty.gm_weferlingen_summer",
+    "appId": 107410,
+    "itemId": "2562404163",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-ReduxEmpty.gm_weferlingen_summer",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562404163",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070930172764_TRGM-ReduxEMPTY.gm_weferlingen_summer.pbo",
+    "file_size": "14624320",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756271448/F0CECD07D76D46EFA5616EF94FC3187785CF73FF/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088485217/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756271448",
+    "hcontent_preview": "1696153791088485217",
+    "title": "[Nightly] TRGM-ReduxEmpty (Weferlingen)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \"Empty\" versions of TRGM-Redux signify that the HQ is not pre-built, and the host/admin/player will be prompted to select a location for an HQ to be created upon mission start.\n\nGitHub: https://github.com/theace0296/TRGMRedux\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627756942,
+    "time_updated": 1628343022,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 32,
+    "favorited": 1,
+    "followers": 0,
+    "lifetime_subscriptions": 37,
+    "lifetime_favorited": 1,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 41,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-ReduxEmpty (Weferlingen W.)",
+    "asset": "TRGM-ReduxEmpty.gm_weferlingen_winter",
+    "appId": 107410,
+    "itemId": "2562402278",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-ReduxEmpty.gm_weferlingen_winter",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562402278",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070930233611_TRGM-ReduxEMPTY.gm_weferlingen_winter.pbo",
+    "file_size": "14624474",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756271862/463139B22078A0F19B8CCEA3403A20C37B5FEFEE/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088481880/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756271862",
+    "hcontent_preview": "1696153791088481880",
+    "title": "[Nightly] TRGM-ReduxEmpty (Weferlingen W.)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \"Empty\" versions of TRGM-Redux signify that the HQ is not pre-built, and the host/admin/player will be prompted to select a location for an HQ to be created upon mission start.\n\nGitHub: https://github.com/theace0296/TRGMRedux\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627756817,
+    "time_updated": 1628343028,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 28,
+    "favorited": 1,
+    "followers": 0,
+    "lifetime_subscriptions": 30,
+    "lifetime_favorited": 1,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 29,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-ReduxEmpty (Livonia)",
+    "asset": "TRGM-ReduxEmpty.lythium",
+    "appId": 107410,
+    "itemId": "2562401092",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-ReduxEmpty.lythium",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562401092",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070930294957_TRGM-ReduxEmpty.lythium.pbo",
+    "file_size": "14624268",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756272277/0FC97379689E6FF3D2177C3C8AE6CB6327443A79/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088407593/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756272277",
+    "hcontent_preview": "1696153791088407593",
+    "title": "[Nightly] TRGM-ReduxEmpty (Livonia)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \"Empty\" versions of TRGM-Redux signify that the HQ is not pre-built, and the host/admin/player will be prompted to select a location for an HQ to be created upon mission start.\r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627756736,
+    "time_updated": 1628343034,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 34,
+    "favorited": 1,
+    "followers": 0,
+    "lifetime_subscriptions": 40,
+    "lifetime_favorited": 1,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 42,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-ReduxEmpty (Malden)",
+    "asset": "TRGM-ReduxEmpty.Malden",
+    "appId": 107410,
+    "itemId": "2562384755",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-ReduxEmpty.Malden",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562384755",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070930355642_TRGM-ReduxEmpty.Malden.pbo",
+    "file_size": "14624377",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756273208/75D27AF5AE2B1D1303BB38F2549A883A4BD99C88/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088390982/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756273208",
+    "hcontent_preview": "1696153791088390982",
+    "title": "[Nightly] TRGM-ReduxEmpty (Malden)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \"Empty\" versions of TRGM-Redux signify that the HQ is not pre-built, and the host/admin/player will be prompted to select a location for an HQ to be created upon mission start.\r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627755601,
+    "time_updated": 1628343049,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 35,
+    "favorited": 1,
+    "followers": 0,
+    "lifetime_subscriptions": 46,
+    "lifetime_favorited": 1,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 46,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-ReduxEmpty (Stratis)",
+    "asset": "TRGM-ReduxEmpty.Stratis",
+    "appId": 107410,
+    "itemId": "2562404986",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-ReduxEmpty.Stratis",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562404986",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070930500014_TRGM-ReduxEMPTY.Stratis.pbo",
+    "file_size": "14624287",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756274116/4C8A5E243D72C6E6A30323357154C96A42D31418/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088424405/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756274116",
+    "hcontent_preview": "1696153791088424405",
+    "title": "[Nightly] TRGM-ReduxEmpty (Stratis)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \"Empty\" versions of TRGM-Redux signify that the HQ is not pre-built, and the host/admin/player will be prompted to select a location for an HQ to be created upon mission start.\r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627757004,
+    "time_updated": 1628343063,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 41,
+    "favorited": 1,
+    "followers": 0,
+    "lifetime_subscriptions": 49,
+    "lifetime_favorited": 1,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 69,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  },
+  {
+    "name": "[Nightly] TRGM-ReduxEmpty (Tanoa)",
+    "asset": "TRGM-ReduxEmpty.Tanoa",
+    "appId": 107410,
+    "itemId": "2562405804",
+    "contentPath": "A:\\Arma 3 Mods\\TRGMRedux\\Mission-Templates\\TRGM-ReduxEmpty.Tanoa",
+    "changelog": "Changes...",
+    "result": 1,
+    "publishedfileid": "2562405804",
+    "creator": "76561198044344337",
+    "creator_appid": 107410,
+    "consumer_appid": 107410,
+    "consumer_shortcutid": 0,
+    "filename": "kp_steam_cli_202108070931044755_TRGM-ReduxEMPTY.Tanoa.pbo",
+    "file_size": "14624490",
+    "preview_file_size": "383223",
+    "file_url": "https://steamusercontent-a.akamaihd.net/ugc/1691650712756274508/F0ACB9088915A4BC58B67FC1F426C610C26BC43B/",
+    "preview_url": "https://steamuserimages-a.akamaihd.net/ugc/1696153791088427900/CC5913FE4D7D8ECEB1DDF447C211B36A674FBF2F/",
+    "url": "",
+    "hcontent_file": "1691650712756274508",
+    "hcontent_preview": "1696153791088427900",
+    "title": "[Nightly] TRGM-ReduxEmpty (Tanoa)",
+    "file_description": "The nightly (development) build of TRGM-Redux. \"Empty\" versions of TRGM-Redux signify that the HQ is not pre-built, and the host/admin/player will be prompted to select a location for an HQ to be created upon mission start.\r\n\r\nGitHub: https://github.com/theace0296/TRGMRedux\r\nReport Bugs: https://github.com/theace0296/TRGMRedux/issues\r\nWiki: https://github.com/theace0296/TRGMRedux/wiki",
+    "time_created": 1627757059,
+    "time_updated": 1628343069,
+    "visibility": 0,
+    "flags": 1536,
+    "workshop_file": false,
+    "workshop_accepted": false,
+    "show_subscribe_all": false,
+    "num_comments_developer": 0,
+    "num_comments_public": 0,
+    "banned": false,
+    "ban_reason": "",
+    "banner": "76561197960265728",
+    "can_be_deleted": true,
+    "app_name": "Arma 3",
+    "file_type": 0,
+    "can_subscribe": true,
+    "subscriptions": 42,
+    "favorited": 1,
+    "followers": 0,
+    "lifetime_subscriptions": 59,
+    "lifetime_favorited": 1,
+    "lifetime_followers": 0,
+    "lifetime_playtime": "0",
+    "lifetime_playtime_sessions": "0",
+    "views": 179,
+    "num_children": 0,
+    "num_reports": 0,
+    "tags": [
+      {
+        "tag": "Singleplayer",
+        "display_name": "Singleplayer"
+      },
+      {
+        "tag": "Infantry",
+        "display_name": "Infantry"
+      },
+      {
+        "tag": "Coop",
+        "display_name": "Coop"
+      },
+      {
+        "tag": "Vehicles",
+        "display_name": "Vehicles"
+      },
+      {
+        "tag": "Scenario",
+        "display_name": "Scenario"
+      },
+      {
+        "tag": "Dependency",
+        "display_name": "Dependency"
+      },
+      {
+        "tag": "Air",
+        "display_name": "Air"
+      },
+      {
+        "tag": "Water",
+        "display_name": "Water"
+      },
+      {
+        "tag": "Multiplayer",
+        "display_name": "Multiplayer"
+      },
+      {
+        "tag": "Tag Review",
+        "display_name": "Tag Review"
+      }
+    ],
+    "language": 0,
+    "maybe_inappropriate_sex": false,
+    "maybe_inappropriate_violence": false,
+    "revision_change_number": "13",
+    "revision": 1,
+    "ban_text_check_result": 0
+  }
+]

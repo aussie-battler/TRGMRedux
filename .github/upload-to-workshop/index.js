@@ -4,7 +4,7 @@ const fsx = require('fs-extra');
 const path = require('path');
 const axios = require('axios').default;
 
-const steamworks = require('./steamworks-node');
+// const steamworks = require('./steamworks-node');
 const QUERY_FILES_ENDPOINT = 'https://api.steampowered.com/IPublishedFileService/QueryFiles/v1/';
 
 const ARMA_APP_ID = 107410;
@@ -17,7 +17,7 @@ const ARMA_FILE_TO_NAME_MAP = {
   chernarus: 'chernarus',
   chernarus_summer: 'chernarus_summer',
   chernarus_winter: 'chernarus_winter',
-  cup_chernarus_a3: 'cup_chernarus_a3',
+  cup_chernarus_a3: 'Chernarus 2020',
   desert_island: 'desert_island',
   enoch: 'enoch',
   fallujah: 'fallujah',
@@ -104,6 +104,7 @@ const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
 
     startGroup('Getting list of existing workshop items...');
     let existingFiles = [];
+    let fileNames = [];
     for (const [name, asset] of Object.entries(releaseAssetsMap)) {
       let currentCursor = '*';
       while (currentCursor) {
@@ -119,8 +120,8 @@ const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
           ) {
             for (const publishedFileDetail of res.data.response.publishedfiledetails) {
               if (
-                publishedFileDetail.creator === THEACE0296_CREATOR_ID &&
-                name.toLowerCase() === publishedFileDetail.title.toLowerCase()
+                publishedFileDetail?.creator === THEACE0296_CREATOR_ID &&
+                name.toLowerCase() === publishedFileDetail?.title?.toLowerCase()
               ) {
                 existingFiles = [
                   ...existingFiles,
@@ -133,6 +134,10 @@ const queryForTRGM = (cursor = '*', search_text = '[Nightly] TRGM-Redux') => {
                     changelog,
                     ...publishedFileDetail,
                   },
+                ];
+                fileNames = [
+                  ...fileNames,
+                  publishedFileDetail.filename
                 ];
               }
             }
